@@ -34,8 +34,8 @@ const Navbar = () => {
   );
 
   return (
-    <div>
-      <div className="navbar bg-red-700">
+    <div className="w-full bg-red-700 ">
+      <div className="navbar max-w-[1280px] px-12 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             {/* hamburger menu for small device */}
@@ -63,7 +63,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+          <a className="btn btn-ghost normal-case text-white text-2xl">AutoHarbor</a>
         </div>
 
         <div className="navbar-center hidden lg:flex">
