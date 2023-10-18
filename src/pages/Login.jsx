@@ -55,10 +55,10 @@ const Login = () => {
 
   return (
     <div>
-      <div className="hero min-h-screen bg-fuchsia-200">
+      <div className="hero min-h-screen" style={{ backgroundImage: "url(https://i.ibb.co/kJkzjmr/login1.jpg)" }}>
         <div className="hero-content flex-col">
           <div className="text-center">
-            <h1 className="text-5xl font-bold">Login now!</h1>
+            <h1 className="text-5xl text-white font-bold">Login now!</h1>
             <p className="py-6">
               Please log in to access your account and explore our services.
             </p>
@@ -99,7 +99,7 @@ const Login = () => {
 
                 {/* login button */}
                 <div className="form-control mt-6">
-                  <button className="btn text-white bg-blue-600 hover:text-white hover:bg-blue-800">
+                  <button className="btn text-white bg-red-600 hover:text-white hover:bg-blue-800">
                     Login
                   </button>
                 </div>
@@ -112,7 +112,7 @@ const Login = () => {
                 {" "}
                 <button
                   onClick={handleGoogle}
-                  className="btn w-1/2 text-white border-none bg-red-500 hover:bg-red-700"
+                  className="btn w-1/2 text-white border-none bg-blue-500 hover:bg-red-600"
                 >
                   <FaGoogle></FaGoogle>Google
                 </button>
@@ -120,7 +120,7 @@ const Login = () => {
 
               <p className="text-center">
                 Do not have an account?{" "}
-                <Link to="/register" className="text-blue-600 font-semibold">
+                <Link to="/register" className="text-red-600 font-semibold">
                   Register here
                 </Link>
               </p>

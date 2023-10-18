@@ -1,6 +1,6 @@
-import { createContext } from "react";
+import { createContext, useEffect } from "react";
 // import app from "../firebase/Firebase.config";
-import { getAuth, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPassword, updateProfile, signOut, onAuthStateChanged } from "firebase/auth";
 import PropTypes from 'prop-types';
 import { useState } from "react";
 import app from "../firebase.config";
@@ -8,7 +8,6 @@ import app from "../firebase.config";
 
 const auth = getAuth(app);
 export const AuthContext = createContext(null);
-
 const googleProvider = new GoogleAuthProvider();
 
 
@@ -16,13 +15,21 @@ const googleProvider = new GoogleAuthProvider();
 
 
 const AuthProvider = ({ children }) => {
-    
+    const [nameAndPhoto, setNameAndPhoto] = useState({});
     const [loading, setLoading] = useState(true);
+    const [user, setUser] = useState(null);
 
 
+    const signUp = (email, password) => {
+        setLoading(true);
+        return createUserWithEmailAndPassword(auth, email, password)
+  
+  
+ 
+   }
 
     //login authentication
-    const signIn = (email, password,) => {
+    const signIn = (email, password) => {
         setLoading(true);
         return signInWithEmailAndPassword(auth, email, password);
     }
@@ -34,8 +41,37 @@ const AuthProvider = ({ children }) => {
     }
 
 
+    updateProfile(auth.currentUser, nameAndPhoto)
+        
+        .then()
+        .catch((error) => {
+            console.error(error);
+          });
+    
+    //logOut authentication
+    const logOut = () => {
+        setLoading(true);
+        return signOut(auth);
+    }
 
-    const authInfo = {signIn, signInGoogle, loading}
+    const userDetails = auth.currentUser;
+        console.log(userDetails);
+
+    
+    
+    
+        useEffect(() => {
+            const unSubscribe = onAuthStateChanged(auth, currentUser => {
+                // console.log("done", currentUser);
+                setUser(currentUser);
+                setLoading(false);
+            });
+            return () => {
+                unSubscribe();
+            }
+        }, [])
+
+    const authInfo = {signIn, signInGoogle, signUp, setNameAndPhoto, loading, user, logOut}
 
     return (
         <div>
