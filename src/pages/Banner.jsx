@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Banner = () => {
@@ -20,17 +21,22 @@ const Banner = () => {
         
               <div style={overlayStyle}></div>
 
-              <div className="text-center m-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+              <div className="text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
            
                   <p className="text-white font-bold  text-3xl lg:text-7xl ">
                   Welcome to AutoHarbour <br />
             
                 </p>
                 <p data-aos="fade-up"
-          data-aos-anchor-placement="bottom-bottom" className="text-white text-xl lg:text-2xl font-semibold mt-5">
+          data-aos-anchor-placement="bottom-bottom" className="text-white text-xl lg:text-2xl font-semibold my-6">
                   Your Destination for Automotive Excellence!
                 </p>
           
+                <Link to="/">
+                <button className="btn text-white bg-red-600 border-none hover:text-white hover:bg-black">
+                  Get Started
+                </button>
+              </Link>
               </div> 
             </div>
         </div>

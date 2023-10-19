@@ -20,7 +20,7 @@ const Testimonial = () => {
 
             <div style={overlayStyle}></div>
 
-            <div className="text-center absolute py-24 z-10 w-[1280px]">
+            <div className="text-center absolute p-24 z-10">
         
             <h3 className="text-red-600 text-6xl font-semibold"><span className="text-3xl text-red-600 font-semibold">...</span>{" "}Testimonial{" "}<span className="text-3xl text-red-600 font-semibold">...</span></h3>
                

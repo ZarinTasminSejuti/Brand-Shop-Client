@@ -1,15 +1,19 @@
 import { useContext } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 import swal from "sweetalert";
 
 const Navbar = () => {
-  const { logOut, userDetails, user } = useContext(AuthContext);
+  
+  const { logOut,user,userDetails } = useContext(AuthContext);
 
+   //navigate after logout
+   const navigate = useNavigate();
   const handleLogOut = () => {
     logOut()
       .then(() => {
         swal("Logged Out successfully");
+        navigate("/");
       })
       .catch((error) => {
         console.error(error);
@@ -59,7 +63,7 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li>{navLinks}</li>
+             {navLinks}
             </ul>
           </div>
 
@@ -70,25 +74,25 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
 
-        <div className="navbar-end">
-          {user ? (
-            <>
-              <img
-                src={userDetails.photoURL}
-                alt={userDetails.displayName}
-                className="w-10 rounded"
-              />
+       <div className="lg:w-1/2 flex flex-row justify-end text-white p-2 gap-3">
+       {user ? (
+         <>
+           <img
+             src={userDetails.photoURL}
+             alt={userDetails.displayName}
+             className="w-10 rounded "
+           />
 
-              <span>{userDetails.displayName}</span>
-              <button
-                className="btn btn-ghost text-white hover:bg-red-600"
-                onClick={handleLogOut}
-              >
-                Log Out
-              </button>
-            </>
-          ) : (
-            <>
+           <span className="text-white">{userDetails.displayName}</span>
+           <button
+             className="btn btn-ghost text-white hover:text-white hover:bg-red-600"
+             onClick={handleLogOut}
+           >
+             Log Out
+           </button>
+         </>
+       ) : (
+         <>
               <Link to="/login">
                 <button className="btn btn-ghost text-white hover:text-white hover:bg-black">
                   Login
@@ -99,9 +103,9 @@ const Navbar = () => {
                   Register
                 </button>
               </Link>
-            </>
-          )}
-        </div>
+             </>
+         )}  
+        </div> 
       </div>
     </div>
   );

@@ -40,7 +40,9 @@ const AuthProvider = ({ children }) => {
         return signInWithPopup(auth, googleProvider);
     }
 
-
+    //Update Name after register
+    //As per firebase doc user logged in when register complete
+    //So updateProfile method need to use to update displayName
     updateProfile(auth.currentUser, nameAndPhoto)
         
         .then()
@@ -48,7 +50,7 @@ const AuthProvider = ({ children }) => {
             console.error(error);
           });
     
-    //logOut authentication
+      //log out authentication
     const logOut = () => {
         setLoading(true);
         return signOut(auth);
@@ -71,7 +73,7 @@ const AuthProvider = ({ children }) => {
             }
         }, [])
 
-    const authInfo = {signIn, signInGoogle, signUp, setNameAndPhoto, loading, user, logOut}
+    const authInfo = {signIn, signInGoogle, signUp, setNameAndPhoto, loading, user, logOut, userDetails}
 
     return (
         <div>

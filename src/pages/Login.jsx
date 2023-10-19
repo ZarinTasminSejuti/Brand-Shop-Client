@@ -26,7 +26,7 @@ const Login = () => {
     signIn(email, password)
       .then(() => {
         swal("You're logged in!", "Login Successful!", "success");
-        e.target.reset();
+         e.target.reset();
         navigate("/");
       })
       .catch(() => {
@@ -35,8 +35,8 @@ const Login = () => {
           "Wrong credentials! Please login again.",
           "error"
         );
-      });
-  };
+      })
+  }
 
   const handleGoogle = () => {
     signInGoogle()
@@ -50,8 +50,8 @@ const Login = () => {
           "Wrong credentials! Please login again.",
           "error"
         );
-      });
-  };
+      })
+  }
 
   return (
     <div>
