@@ -30,7 +30,7 @@ const handleAddToCart = () => {
     fetch("http://localhost:5000/myCart", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "content-Type": "application/json",
       },
       body: JSON.stringify(carCardDetails[0]),
     })

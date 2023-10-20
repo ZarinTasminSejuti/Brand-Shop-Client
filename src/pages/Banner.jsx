@@ -15,7 +15,7 @@ const Banner = () => {
     
 
     return (
-        <div className="w-full bg-cover h-[500px] bg-fixed lg:h-[900px] relative"
+        <div className="w-full bg-cover h-[500px] bg-fixed lg:h-[750px] relative"
         style={{ backgroundImage: "url(https://i.ibb.co/mNTJKyV/car-banner.jpg)" }}>
             <div className="max-w-[1280px]">
         

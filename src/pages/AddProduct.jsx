@@ -1,10 +1,11 @@
 import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import swal from "sweetalert";
 import { AuthContext } from "../providers/AuthProvider";
 import Footer from "./Footer";
 
 const AddProduct = () => {
-
+  const navigate = useNavigate();
     const { userDetails } = useContext(AuthContext);
 
   console.log(userDetails);
@@ -23,6 +24,7 @@ const AddProduct = () => {
     const description = form.productDescription.value;
     const rating = form.productRating.value;
     const image = form.imageUrl.value;
+    // const mySelect = form.select.value
 
     const userEmail = userDetails.email;
     console.log(type);
@@ -53,12 +55,23 @@ const AddProduct = () => {
         if (data.insertedId) {
           swal("Product Added!", "New Product added Successful!", "success");
           form.reset();
+          // mySelect.selectedIndex = 0;
+          navigate("/");
         }
-      });
+        
+      })
+      .catch(() => {
+        swal(
+          "Failed!",
+          "Wrong credentials! Please Add again.",
+          "error"
+        );
+      })
+    
   };
 
   return (
-    <div className="bg-[#CCCCC] w-full">
+    <div className="bg-[#CCCCC] w-full " >
       <div className="py-36 w-full lg:w-[1280px] mx-auto">
         <h3 className="text-5xl text-center mb-12 font-semibold">
           <span className="text-3xl text-red-600 font-semibold">...</span> Add
@@ -78,6 +91,7 @@ const AddProduct = () => {
                   placeholder="Enter product name..."
                   name="productName"
                   className="input input-bordered rounded-md! w-full"
+                  required
                 />
               </label>
             </div>
@@ -87,8 +101,8 @@ const AddProduct = () => {
                 <span className="label-text">Brand Name</span>
               </label>
               <label className="input-group">
-                <select name="brandName" className="select input-bordered w-full">
-                  <option defaultValue="brandName" disabled>
+                <select name="brandName" id="select" className="select input-bordered w-full">
+                  <option disabled>
                     Select a vehicle type...
                   </option>
                   <option value="Toyota">Toyota</option>
@@ -115,10 +129,11 @@ const AddProduct = () => {
                   <option defaultValue="type" disabled >
                     Select a vehicle type...
                   </option>
-                  <option value="sedan">Sedan</option>
-                  <option value="suv">SUV</option>
-                  <option value="hatchback">Hatchback</option>
-                  <option value="truck">Truck</option>
+                  <option value="Sedan">Sedan</option>
+                  <option value="SUV">SUV</option>
+                  <option value="Hatchback">Hatchback</option>
+                  <option value="Truck">Truck</option>
+                  <option value="CompactCar">Compact Car</option>
                 </select>
               </label>
             </div>
@@ -133,6 +148,7 @@ const AddProduct = () => {
                   placeholder="Enter price..."
                   name="price"
                   className="input input-bordered w-full"
+                  required
                 />
               </label>
             </div>

@@ -22,7 +22,7 @@ const MyCart = () => {
     fetch(`http://localhost:5000/myCart/${itemId}`, {
             method: "DELETE",
             headers: {
-              "Content-Type": "application/json",
+              "content-Type": "application/json",
             },
           })
             .then((response) => response.json())
@@ -55,7 +55,7 @@ const MyCart = () => {
                 {/* Use flex layout */}
                 <div className="text-right mb-2">
                   {" "}
-                  {/* Add text-right class to align to the right */}
+               
                   <span className="text-xs text-white bg-green-600 py-1 px-2 rounded-full">
                     In your cart
                   </span>

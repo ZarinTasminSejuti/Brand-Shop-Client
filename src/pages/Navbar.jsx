@@ -67,7 +67,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <a className="btn btn-ghost normal-case text-white text-2xl">AutoHarbor</a>
+          <img src="https://i.ibb.co/g7zfrn3/logo1.png" className="w-1/2"/>
         </div>
 
         <div className="navbar-center hidden lg:flex">
