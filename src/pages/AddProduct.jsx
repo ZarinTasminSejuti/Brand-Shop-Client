@@ -88,7 +88,7 @@ const AddProduct = () => {
               </label>
               <label className="input-group">
                 <select name="brandName" className="select input-bordered w-full">
-                  <option value="brandName" disabled selected>
+                  <option defaultValue="brandName" disabled>
                     Select a vehicle type...
                   </option>
                   <option value="Toyota">Toyota</option>
@@ -112,7 +112,7 @@ const AddProduct = () => {
               </label>
               <label className="input-group">
                 <select name="type" className="select input-bordered w-full">
-                  <option value="type" disabled selected>
+                  <option defaultValue="type" disabled >
                     Select a vehicle type...
                   </option>
                   <option value="sedan">Sedan</option>
