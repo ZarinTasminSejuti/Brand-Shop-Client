@@ -29,12 +29,11 @@ const Testimonial = () => {
           
               <div className="w-[1280px] mx-auto relative z-50">
               <div className="flex justify-between mx-auto py-24 ">
-                <div className="w-full bg-slate-200 p-6 md:w-96 md:p-12 rounded-lg">
+                <div className="w-full bg-white p-6 md:w-96 md:p-12 rounded-lg">
                   <div className="">
                     <p className="text-2xl font-serif text-slate-800 after:content-['\201D'] after:text-3xl after:text-gray-400 before:content-['\201C'] before:text-gray-400 before::text-3xl">
                       {" "}
-                      This is a comment card appearing above a dotted
-                      background, and that's really cool!{" "}
+                      I highly recommend this website to anyone looking for a reliable and convenient way to buy a car.{" "}
                     </p>
                   </div>
                   <div className="flex flex-row pt-6 mt-3 items-center">
@@ -47,73 +46,71 @@ const Testimonial = () => {
                     </div>
                     <div className="flex flex-col ml-4 text-left">
                       <span className="font-semibold text-lg text-black">
-                        Naruto Uzumaki
+                      Abir Ahmed Raj
                       </span>
                       <span
                         className=" font-medium
                      text-sm text-slate-500"
                       >
-                        Seventh Hokage
+                        Premium User
                       </span>
                     </div>
                   </div>
                 </div>
 
-                <div className="w-full bg-slate-200 p-6 md:w-96 md:p-12 rounded-lg">
+                <div className="w-full bg-white p-6 md:w-96 md:p-12 rounded-lg">
                   <div className="">
                     <p className="text-2xl font-serif text-slate-800 after:content-['\201D'] after:text-3xl after:text-gray-400 before:content-['\201C'] before:text-gray-400 before::text-3xl">
                       {" "}
-                      This is a comment card appearing above a dotted
-                      background, and that's really cool!{" "}
+                      I am thrilled with my new car from this website and the search filters helped me narrow down my options quickly.{" "}
                     </p>
                   </div>
                   <div className="flex flex-row pt-6 mt-3 items-center">
                     <div className=" w-11 h-11 ">
                       <img
                         className="w-full h-full rounded-full"
-                        src="https://avatars.githubusercontent.com/u/20525486?v=4"
+                        src="https://i.ibb.co/r6k6R03/author2.jpg"
                         alt=""
                       />
                     </div>
                     <div className="flex flex-col ml-4 text-left">
                       <span className="font-semibold text-lg text-black">
-                        Naruto Uzumaki
+                        Zarin Tasmin Sejuti
                       </span>
                       <span
                         className=" font-medium
                      text-sm text-slate-500"
                       >
-                        Seventh Hokage
+                        Active User
                       </span>
                     </div>
                   </div>
                 </div>
 
-                <div className="w-full bg-slate-200 p-6 md:w-96 md:p-12 rounded-lg">
+                <div className="w-full bg-white p-6 md:w-96 md:p-12 rounded-lg">
                   <div className="">
                     <p className="text-2xl font-serif text-slate-800 after:content-['\201D'] after:text-3xl after:text-gray-400 before:content-['\201C'] before:text-gray-400 before::text-3xl">
                       {" "}
-                      This is a comment card appearing above a dotted
-                      background, and that's really cool!{" "}
+                      The selection of cars is impressive, and the detailed information made it easy for me to make the right choice.{" "}
                     </p>
                   </div>
                   <div className="flex flex-row pt-6 mt-3 items-center">
                     <div className=" w-11 h-11 ">
                       <img
                         className="w-full h-full rounded-full"
-                        src="https://avatars.githubusercontent.com/u/20525486?v=4"
+                        src="https://i.ibb.co/JHmhkDJ/author1.jpg"
                         alt=""
                       />
                     </div>
                     <div className="flex flex-col ml-4 text-left">
                       <span className="font-semibold text-lg text-black">
-                        Naruto Uzumaki
+                        Anna Marigold
                       </span>
                       <span
                         className=" font-medium
                      text-sm text-slate-500"
                       >
-                        Seventh Hokage
+                        Pro User
                       </span>
                     </div>
                   </div>

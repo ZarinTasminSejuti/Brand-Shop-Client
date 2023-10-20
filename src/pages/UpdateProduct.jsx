@@ -8,9 +8,9 @@ const UpdateProduct = () => {
 
     return (
         <div className="bg-[#CCCCC] w-full">
-        <div className="py-36 w-full lg:w-[1280px] mx-auto">
-          <h3 className="text-5xl text-center mb-12 font-semibold">
-            <span className="text-3xl text-red-600 font-semibold">...</span> Update Your Product{" "}{car.productName}
+        <div className="py-20 w-full lg:w-[1280px] mx-auto">
+          <h3 className="text-5xl text-center mb-24 font-semibold">
+            <span className="text-3xl text-red-600 font-semibold">...</span> Update Your Product{" "}<span className="text-red-600">{car.productName}</span>{" "}
             <span className="text-3xl text-red-600 font-semibold">...</span>
           </h3>
           <form>
@@ -18,9 +18,9 @@ const UpdateProduct = () => {
             <div className="md:flex">
               <div className="form-control md:w-1/2 mr-5">
                 <label className="label">
-                  <span className="label-text">Product Name</span>
+                  <span className="label-text text-black font-bold">Product Name</span>
                 </label>
-                <label className="input-group">
+                <label >
                   <input
                     type="text"
                     placeholder="Enter product name..."
@@ -32,9 +32,9 @@ const UpdateProduct = () => {
   
               <div className="form-control md:w-1/2">
                 <label className="label">
-                  <span className="label-text">Brand Name</span>
+                  <span className="label-text text-black font-bold">Brand Name</span>
                 </label>
-                <label className="input-group">
+                <label >
                   <select name="brandName" className="select input-bordered w-full">
                     <option defaultValue="brandName" disabled>
                       Select a vehicle type...
@@ -56,9 +56,9 @@ const UpdateProduct = () => {
             <div className="md:flex ">
               <div className="form-control md:w-1/2 mr-5">
                 <label className="label">
-                  <span className="label-text">Type</span>
+                  <span className="label-text text-black font-bold">Type</span>
                 </label>
-                <label className="input-group">
+                <label >
                   <select name="type" className="select input-bordered w-full">
                     <option defaultValue="type" disabled >
                       Select a vehicle type...
@@ -73,9 +73,9 @@ const UpdateProduct = () => {
   
               <div className="form-control md:w-1/2">
                 <label className="label">
-                  <span className="label-text">Price</span>
+                  <span className="label-text text-black font-bold">Price</span>
                 </label>
-                <label className="input-group">
+                <label >
                   <input
                     type="text"
                     placeholder="Enter price..."
@@ -90,9 +90,9 @@ const UpdateProduct = () => {
             <div className="md:flex">
               <div className="form-control md:w-1/2 mr-5">
                 <label className="label">
-                  <span className="label-text">Image Url</span>
+                  <span className="label-text text-black font-bold">Image Url</span>
                 </label>
-                <label className="input-group">
+                <label >
                   <input
                     type="text"
                     placeholder="Enter image url...."
@@ -104,9 +104,9 @@ const UpdateProduct = () => {
   
               <div className="form-control md:w-1/2">
                 <label className="label">
-                  <span className="label-text">Product Rating</span>
+                  <span className="label-text text-black font-bold">Product Rating</span>
                 </label>
-                <label className="input-group">
+                <label >
                   <input
                     type="text"
                     placeholder="Enter rating...."
@@ -120,9 +120,9 @@ const UpdateProduct = () => {
             <div className="md:flex">
               <div className="form-control md:w-full mr-5">
                 <label className="label">
-                  <span className="label-text">Product Description</span>
+                  <span className="label-text text-black font-bold">Product Description</span>
                 </label>
-                <label className="input-group">
+                <label >
                   <textarea
                     type="text"
                     placeholder="Enter product description..."
