@@ -1,7 +1,10 @@
 import swal from "sweetalert";
-import { useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useNavigate, useParams } from "react-router-dom";
 
 const SingleCarDetails = () => {
+
+
+  const navigate = useNavigate();
   const carCollection = useLoaderData();
   // console.log(carCollection);
   const { _id } = useParams();
@@ -57,6 +60,7 @@ const SingleCarDetails = () => {
             "Product added Successfully!",
             "success"
           );
+          navigate("/myCart");
         }
       });
   };

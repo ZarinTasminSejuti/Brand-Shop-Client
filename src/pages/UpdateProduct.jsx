@@ -1,4 +1,4 @@
-import { Navigate, useLoaderData } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import Footer from "./Footer";
 import swal from "sweetalert";
 
@@ -17,7 +17,7 @@ const UpdateProduct = () => {
     userEmail,
     _id
   } = car;
-
+//  console.log(_id);
 
 
   const handleSubmit = (event) => {
@@ -57,11 +57,11 @@ const UpdateProduct = () => {
         .then((response) => response.json())
         .then((data) => {
           console.dir(data);
-          if (data.updatedCount > 0) {
+          if (data.modifiedCount > 0) {
             swal("Product Updated!", "Product updated Successfully!", "success");
-            form.reset();
-            Navigate(`brandProducts/${_id}`)
-          }
+            
+        
+          }  
         });
     };
 
@@ -122,14 +122,16 @@ const UpdateProduct = () => {
                   <span className="label-text text-black font-bold">Type</span>
                 </label>
                 <label >
-                  <select name="type" className="select input-bordered w-full">
-                    <option  disabled >
+                  <select name="type" className="select input-bordered w-full" >
+                    <option defaultValue={type}  disabled >
                       Select a vehicle type...
                     </option>
                     <option value="sedan">Sedan</option>
                     <option value="suv">SUV</option>
                     <option value="hatchback">Hatchback</option>
                     <option value="truck">Truck</option>
+                    <option value="CompactCar">Compact Car</option>
+                  <option value="Sports">Sports Car</option>
                   </select>
                 </label>
               </div>
