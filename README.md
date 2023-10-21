@@ -1,7 +1,7 @@
 # EventifyEDU - An Educational Event Management System
 
 
-### Project Live Link: 
+### Project Live Link: https://brand-shop-client-42556.web.app/
 
 
 

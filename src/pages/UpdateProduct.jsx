@@ -6,7 +6,6 @@ const UpdateProduct = () => {
 
   const car = useLoaderData();
 
-
   const {productName,
     brandName,
     type,
@@ -22,9 +21,10 @@ const UpdateProduct = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("form submitted");
+    console.log(event.target.productName.value);
 
     const form = event.target;
+  
 
     const productName = form.productName.value;
     const brandName = form.brandName.value;
@@ -33,6 +33,7 @@ const UpdateProduct = () => {
     const description = form.productDescription.value;
     const rating = form.productRating.value;
     const image = form.imageUrl.value;
+
     // const mySelect = form.select.value
 
     const newProduct = {
@@ -45,18 +46,17 @@ const UpdateProduct = () => {
       image,
       userEmail
     };
-
+console.log(newProduct);
 
       fetch(`http://localhost:5000/updateProduct/${_id}`, {
         method: "PUT",
         headers: {
-          "content-Type": "application/json",
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(newProduct),
       })
         .then((response) => response.json())
         .then((data) => {
-          console.dir(data);
           if (data.modifiedCount > 0) {
             swal("Product Updated!", "Product updated Successfully!", "success");
             

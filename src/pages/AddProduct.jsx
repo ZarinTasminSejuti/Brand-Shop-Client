@@ -8,15 +8,14 @@ const AddProduct = () => {
   const navigate = useNavigate();
     const { userDetails } = useContext(AuthContext);
 
-  console.log(userDetails);
+
   
   
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("form submitted");
+
 
     const form = event.target;
-
     const productName = form.productName.value;
     const brandName = form.brandName.value;
     const type = form.type.value;
@@ -27,7 +26,7 @@ const AddProduct = () => {
     // const mySelect = form.select.value
 
     const userEmail = userDetails.email;
-    console.log(type);
+ 
 
     const newProduct = {
       productName,
@@ -40,7 +39,6 @@ const AddProduct = () => {
       userEmail
     };
 
-    console.log(newProduct);
 
     fetch("http://localhost:5000/addProduct", {
       method: "POST",
@@ -51,7 +49,6 @@ const AddProduct = () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.dir(data);
         if (data.insertedId) {
           swal("Product Added!", "New Product added Successful!", "success");
           form.reset();
