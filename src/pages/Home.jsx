@@ -9,8 +9,6 @@ import Testimonial from "../components/Testimonial";
 
 
 const Home = () => {
-    
-    // const toggle = theme ? "dark" : "light";
 
 
     const brand = useLoaderData();

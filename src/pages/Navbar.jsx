@@ -7,11 +7,12 @@ import ToggleButton from "../components/ToggleButton";
 
 const Navbar = () => {
 
+  //navigate after logout
+  const navigate = useNavigate();
 
   const { logOut,user,userDetails } = useContext(AuthContext);
 
-   //navigate after logout
-   const navigate = useNavigate();
+
   const handleLogOut = () => {
     logOut()
       .then(() => {
@@ -46,10 +47,10 @@ const Navbar = () => {
 
   return (
     <div className="w-full bg-red-600 ">
-      <div className="navbar max-w-[1280px] px-8 mx-auto">
-        <div className="navbar-start">
-          <div className="dropdown">
-            {/* hamburger menu for small device */}
+      <div className="navbar flex-col lg:flex-row justify-between items-center max-w-[1280px] px-8 mx-auto">
+        <div className="lg:w-1/2 flex flex-col lg:flex-row my-5 lg:my-0">
+          {/* <div className="dropdown">
+           
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -72,12 +73,12 @@ const Navbar = () => {
             >
              {navLinks}
             </ul>
-          </div>
+          </div> */}
 
           <img src="https://i.ibb.co/g7zfrn3/logo1.png" className="w-1/2"/>
         </div>
 
-        <div className="navbar-center hidden lg:flex">
+        <div className="lg:navbar-center">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
 

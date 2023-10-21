@@ -9,7 +9,7 @@ const BrandProducts = () => {
   const { title } = useParams();
 
   const carCard = carCollection.filter(
-    // (car) => car.brandName.toLowerCase() === title.toLowerCase() && (car.userEmail === userDetails.email)
+ 
     (car) =>
       car.brandName.toLowerCase() === title.toLowerCase() &&
       userDetails?.email === car.userEmail
@@ -68,16 +68,16 @@ const BrandProducts = () => {
        
       </div>
 
-      <div className=" w-[1280px] my-20 mx-auto ">
-        <h2 className="text-2xl text-red-600 text-center font-semibold mb-10">... Buy Your Next Car in AutoHarbor, Get Behind the Wheel with Ease ...</h2>
+      <div className="w-full lg:w-[1280px] my-20 mx-auto ">
+        <h2 className="text-2xl text-red-600 text-center p-3 lg:p-0 font-semibold mb-10">... Buy Your Next Car in AutoHarbor, Get Behind the Wheel with Ease ...</h2>
         <div className="space-y-4">
           {carCard.map((carElement) => (
             <div
               className=" bg-slate-100 rounded-lg shadow-md"
               key={carElement._id}
             >
-              <div className="flex items-center ">
-                <div className="w-1/3">
+              <div className="flex flex-col lg:flex-row items-center ">
+                <div className="w-full lg:w-1/3">
                 <img
                   src={carElement.image}
                   alt=""
@@ -86,12 +86,12 @@ const BrandProducts = () => {
                 />
                 </div>
 
-                <div className="card-body w-2/3 ">
+                <div className="card-body lg:w-2/3 md:relative">
                   <h2 className="card-title text-2xl">
                     {carElement.productName}
                   </h2>
 
-                  <div className="flex gap-7 my-3 items-center ml-1">
+                  <div className="flex gap-3 lg:gap-7 my-3 items-center ml-1">
                     <h2>
                       <span className="text-red-700 font-medium">
                         Brand Name:
@@ -108,8 +108,14 @@ const BrandProducts = () => {
                     </p>
                   </div>
 
-                  <div className="mb-6 ml-1 w-3/4">
+                  <div className="mb-6 ml-1 w-full lg:w-3/4">
                     <p className="text-justify">{carElement.description}</p>
+                  </div>
+
+                  <div className="md:absolute md:right-10 md:bottom-9 ">
+                  <h2 className=" text-red-600 font-bold lg:mt-0 text-3xl my-5 md:my-0">
+                      $ {carElement.price}
+                    </h2>
                   </div>
 
                   <div className="card-actions w-full justify-between items-center">
@@ -130,9 +136,7 @@ const BrandProducts = () => {
                       </Link>
                     </div>
 
-                    <h2 className=" text-red-600 font-bold text-3xl">
-                      $ {carElement.price}
-                    </h2>
+                    
                   </div>
                 </div>
               </div>

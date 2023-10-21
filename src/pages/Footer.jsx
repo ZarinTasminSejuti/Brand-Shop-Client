@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className="w-full">
         <footer className="footer footer-center p-10 bg-black text-white">
-        <img src="https://i.ibb.co/g7zfrn3/logo1.png" className="w-1/6 hover:text-red-600"/>
+        <img src="https://i.ibb.co/g7zfrn3/logo1.png" className="w-1/2 lg:w-1/6 hover:text-red-600"/>
         <nav className="grid grid-flow-col gap-4 ">
           <a className="link link-hover hover:text-red-600">About us</a>
           <a className="link link-hover hover:text-red-600">Contact</a>

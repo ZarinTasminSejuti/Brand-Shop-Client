@@ -18,8 +18,8 @@ const MyCart = () => {
   // Function to handle item deletion
   const handleDelete = (itemId) => {
    
-
-    fetch(`http://localhost:5000/myCart/${itemId}`, {
+    // fetch(`https://brand-shop-server-3ttowepeu-zarin-tasmin-sejutis-projects.vercel.app/myCart/${itemId}`, 
+    fetch(`http://localhost:5000/myCart/${itemId} `, {
             method: "DELETE",
             headers: {
               "content-Type": "application/json",
@@ -40,7 +40,7 @@ const MyCart = () => {
 
   return (
     <div>
-      <div className=" bg-green-100 p-5 w-[1280px] my-20 mx-auto">
+      <div className=" bg-green-100 p-5 w-full lg:w-[1280px] my-20 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 ">
           {carCard.map((SingleCarElement) => (
 

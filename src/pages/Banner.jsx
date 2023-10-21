@@ -23,12 +23,12 @@ const Banner = () => {
 
               <div className="text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
            
-                  <p className="text-white font-bold  text-3xl lg:text-7xl ">
+                  <p className="text-white font-bold  text-5xl lg:text-7xl ">
                   Welcome to AutoHarbour <br />
             
                 </p>
                 <p data-aos="fade-up"
-          data-aos-anchor-placement="bottom-bottom" className="text-white text-xl lg:text-2xl font-semibold my-6">
+          data-aos-anchor-placement="bottom-bottom" className="text-white text-2xl font-semibold my-6">
                   Your Destination for Automotive Excellence!
                 </p>
           

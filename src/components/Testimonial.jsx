@@ -27,16 +27,16 @@ const Testimonial = () => {
          
 
           
-              <div className="w-[1280px] mx-auto relative z-50">
-              <div className="flex justify-between mx-auto py-24 ">
-                <div className="w-full bg-white p-6 md:w-96 md:p-12 rounded-lg">
+              <div className="w-full lg:w-[1280px] mx-auto relative z-50">
+              <div className="flex flex-col lg:flex-row lg:justify-between justify-center mx-auto py-24 px-3 lg:px-0 ">
+                <div className="w-full bg-white p-6 md:w-96  mx-auto md:p-12 rounded-lg">
                   <div className="">
                     <p className="text-2xl font-serif text-slate-800 after:content-['\201D'] after:text-3xl after:text-gray-400 before:content-['\201C'] before:text-gray-400 before::text-3xl">
                       {" "}
                       I highly recommend this website to anyone looking for a reliable and convenient way to buy a car.{" "}
                     </p>
                   </div>
-                  <div className="flex flex-row pt-6 mt-3 items-center">
+                  <div className="flex flex-col lg:flex-row pt-6 mt-3 items-center">
                     <div className=" w-11 h-11 ">
                       <img
                         className="w-full h-full rounded-full"
@@ -44,7 +44,7 @@ const Testimonial = () => {
                         alt=""
                       />
                     </div>
-                    <div className="flex flex-col ml-4 text-left">
+                    <div className="flex flex-col ml-4 text-center lg:text-left">
                       <span className="font-semibold text-lg text-black">
                       Abir Ahmed Raj
                       </span>
@@ -58,14 +58,14 @@ const Testimonial = () => {
                   </div>
                 </div>
 
-                <div className="w-full bg-white p-6 md:w-96 md:p-12 rounded-lg">
+                <div className="w-full bg-white p-6 md:w-96 mx-auto md:p-12 my-4 lg:my-0 rounded-lg">
                   <div className="">
                     <p className="text-2xl font-serif text-slate-800 after:content-['\201D'] after:text-3xl after:text-gray-400 before:content-['\201C'] before:text-gray-400 before::text-3xl">
                       {" "}
                       I am thrilled with my new car from this website and the search filters helped me narrow down my options quickly.{" "}
                     </p>
                   </div>
-                  <div className="flex flex-row pt-6 mt-3 items-center">
+                  <div className="flex flex-col lg:flex-row pt-6 mt-3 items-center">
                     <div className=" w-11 h-11 ">
                       <img
                         className="w-full h-full rounded-full"
@@ -73,7 +73,7 @@ const Testimonial = () => {
                         alt=""
                       />
                     </div>
-                    <div className="flex flex-col ml-4 text-left">
+                    <div className="flex flex-col ml-4 text-center lg:text-left">
                       <span className="font-semibold text-lg text-black">
                         Zarin Tasmin Sejuti
                       </span>
@@ -87,14 +87,14 @@ const Testimonial = () => {
                   </div>
                 </div>
 
-                <div className="w-full bg-white p-6 md:w-96 md:p-12 rounded-lg">
+                <div className="w-full bg-white p-6 md:w-96 mx-auto md:p-12 rounded-lg">
                   <div className="">
                     <p className="text-2xl font-serif text-slate-800 after:content-['\201D'] after:text-3xl after:text-gray-400 before:content-['\201C'] before:text-gray-400 before::text-3xl">
                       {" "}
                       The selection of cars is impressive, and the detailed information made it easy for me to make the right choice.{" "}
                     </p>
                   </div>
-                  <div className="flex flex-row pt-6 mt-3 items-center">
+                  <div className="flex flex-col lg:flex-row pt-6 mt-3 items-center">
                     <div className=" w-11 h-11 ">
                       <img
                         className="w-full h-full rounded-full"
@@ -102,7 +102,7 @@ const Testimonial = () => {
                         alt=""
                       />
                     </div>
-                    <div className="flex flex-col ml-4 text-left">
+                    <div className="flex flex-col ml-4 text-center lg:text-left">
                       <span className="font-semibold text-lg text-black">
                         Anna Marigold
                       </span>

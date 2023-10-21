@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const BrandCard = ({brand}) => {
         const {  title, image} = brand;
     return (
-        <div className="p-2 lg:p-0">
+        <div className="p-3 lg:p-0">
             <Link to={`/brandProducts/${title}`}>  
             <div  className="relative rounded-xl drop-shadow-xl" data-aos="zoom-in">
 

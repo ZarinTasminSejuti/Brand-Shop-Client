@@ -34,13 +34,8 @@ const SingleCarDetails = () => {
     rating,
     image,
     userEmail }
-   
-    
 
-
-
-
-
+    // fetch("https://brand-shop-server-3ttowepeu-zarin-tasmin-sejutis-projects.vercel.app/myCart",
 
 
   const handleAddToCart = () => {
@@ -66,7 +61,7 @@ const SingleCarDetails = () => {
   };
 
   return (
-    <div className=" p-5 w-[1280px] mt-20 mb-24 mx-auto">
+    <div className=" p-5 w-full lg:w-[1280px] mt-20 mb-24 mx-auto">
       <div className="w-full">
         {carCardDetails.map((SingleCarElement) => (
           <div

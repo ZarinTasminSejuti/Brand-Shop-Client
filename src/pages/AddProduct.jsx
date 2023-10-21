@@ -39,7 +39,7 @@ const AddProduct = () => {
       userEmail
     };
 
-
+    // fetch("https://brand-shop-server-3ttowepeu-zarin-tasmin-sejutis-projects.vercel.app/addProduct", {
     fetch("http://localhost:5000/addProduct", {
       method: "POST",
       headers: {
@@ -70,15 +70,15 @@ const AddProduct = () => {
   return (
     <div className="bg-white w-full " >
       <div className="py-20 w-full lg:w-[1280px] mx-auto">
-        <h3 className="text-5xl text-center mb-24 font-semibold">
+        <h3 className="text-3xl lg:text-5xl text-center mb-12 lg:mb-24 font-semibold">
           <span className="text-3xl text-red-600 font-semibold">...</span> Add
           New Product{" "}
           <span className="text-3xl text-red-600 font-semibold">...</span>
         </h3>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="p-4 lg:p-0">
           {/* row one */}
           <div className="md:flex">
-            <div className="form-control md:w-1/2 mr-5">
+            <div className="form-control md:w-1/2 lg:mr-5">
               <label className="label">
                 <span className="label-text text-black font-bold">Product Name</span>
               </label>
@@ -117,7 +117,7 @@ const AddProduct = () => {
 
           {/* row one */}
           <div className="md:flex ">
-            <div className="form-control md:w-1/2 mr-5">
+            <div className="form-control md:w-1/2 lg:mr-5">
               <label className="label">
                 <span className="label-text text-black font-bold">Type</span>
               </label>
@@ -154,7 +154,7 @@ const AddProduct = () => {
 
           {/* row one */}
           <div className="md:flex">
-            <div className="form-control md:w-1/2 mr-5">
+            <div className="form-control md:w-1/2 lg:mr-5">
               <label className="label">
                 <span className="label-text text-black font-bold">Image Url</span>
               </label>
@@ -184,7 +184,7 @@ const AddProduct = () => {
           </div>
 
           <div className="md:flex">
-            <div className="form-control md:w-full mr-5">
+            <div className="form-control md:w-full lg:mr-5">
               <label className="label">
                 <span className="label-text text-black font-bold">Product Description</span>
               </label>

@@ -25,7 +25,6 @@ const UpdateProduct = () => {
 
     const form = event.target;
   
-
     const productName = form.productName.value;
     const brandName = form.brandName.value;
     const type = form.type.value;
@@ -33,8 +32,6 @@ const UpdateProduct = () => {
     const description = form.productDescription.value;
     const rating = form.productRating.value;
     const image = form.imageUrl.value;
-
-    // const mySelect = form.select.value
 
     const newProduct = {
       productName,
@@ -48,22 +45,24 @@ const UpdateProduct = () => {
     };
 console.log(newProduct);
 
-      fetch(`http://localhost:5000/updateProduct/${_id}`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(newProduct),
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          if (data.modifiedCount > 0) {
-            swal("Product Updated!", "Product updated Successfully!", "success");
-            
-        
-          }  
-        });
-    };
+// fetch(`https://brand-shop-server-3ttowepeu-zarin-tasmin-sejutis-projects.vercel.app/updateProduct/${_id}`,
+    
+fetch(`http://localhost:5000/updateProduct/${_id}`, {
+  method: "PUT",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify(newProduct),
+})
+  .then((response) => response.json())
+  .then((data) => {
+    if (data.modifiedCount > 0) {
+      swal("Product Updated!", "Product updated Successfully!", "success");
+      
+      
+    }  
+  });
+};
 
 
 

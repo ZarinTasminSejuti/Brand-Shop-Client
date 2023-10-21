@@ -42,21 +42,25 @@ const router = createBrowserRouter([
         path: "/brandProducts/:title",
         element: <BrandProducts></BrandProducts>,
         loader: () => fetch('http://localhost:5000/addProduct')
+        // loader: () => fetch('https://brand-shop-server-3ttowepeu-zarin-tasmin-sejutis-projects.vercel.app/addProduct')
       },
       {
         path: "/SingleCarDetails/:_id",
         element: <PrivateRoute><SingleCarDetails></SingleCarDetails></PrivateRoute>,
         loader: () => fetch('http://localhost:5000/addProduct')
+        // loader: () => fetch('https://brand-shop-server-3ttowepeu-zarin-tasmin-sejutis-projects.vercel.app/addProduct')
       },
       {
         path: "/myCart",
         element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
         loader: () => fetch('http://localhost:5000/myCart')
+        // loader: () => fetch('https://brand-shop-server-3ttowepeu-zarin-tasmin-sejutis-projects.vercel.app/myCart')
       },
       {
         path: "/updateProduct/:_id",
         element: <PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
-        loader: ({params}) => fetch(`http://localhost:5000/updateProduct/${params._id}`)
+        loader: ({ params }) => fetch(`http://localhost:5000/updateProduct/${params._id}`)
+        // loader: ({params}) => fetch(`https://brand-shop-server-3ttowepeu-zarin-tasmin-sejutis-projects.vercel.app/updateProduct/${params._id}`)
       },
       {
         path: "/footer",

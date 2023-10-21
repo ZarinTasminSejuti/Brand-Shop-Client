@@ -6,10 +6,6 @@ import { AuthContext } from "../providers/AuthProvider";
 
 
 
-
-
-
-
 const Login = () => {
   const { signIn, signInGoogle } = useContext(AuthContext);
 
@@ -38,6 +34,7 @@ const Login = () => {
       })
   }
 
+
   const handleGoogle = () => {
     signInGoogle()
       .then(() => {
@@ -54,6 +51,7 @@ const Login = () => {
       })
   }
 
+  
   return (
     <div>
       <div className="hero min-h-screen" style={{ backgroundImage: "url(https://i.ibb.co/kJkzjmr/login1.jpg)" }}>
