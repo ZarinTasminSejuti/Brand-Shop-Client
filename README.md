@@ -1,4 +1,4 @@
-# EventifyEDU - An Educational Event Management System
+# AutoHarbor - Your Destination for Automotive Excellence!
 
 
 ### Project Live Link: https://brand-shop-client-42556.web.app/
