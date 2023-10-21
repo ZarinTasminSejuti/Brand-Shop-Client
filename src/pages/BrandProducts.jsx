@@ -17,24 +17,7 @@ const BrandProducts = () => {
 
   console.log(carCard);
 
-  const handleUpdate = (carElement) => {
-    console.log(carElement);
-    // fetch(`http://localhost:5000/updateProduct/${carElement._id}`, {
-    //   method: "PUT",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify(carElement[0]),
-    // })
-    //   .then((response) => response.json())
-    //   .then((data) => {
-    //     console.dir(data);
-    //     if (data.updatedCount > 0) {
-    //       swal("Product Updated!", "Product updated Successfully!", "success");
-    //       // form.reset();
-    //     }
-    //   });
-  };
+  
 
   return (
     <div>
@@ -94,13 +77,16 @@ const BrandProducts = () => {
               key={carElement._id}
             >
               <div className="flex items-center ">
+                <div className="w-1/3">
                 <img
                   src={carElement.image}
                   alt=""
-                  className="p-6 w-[450px] h-[300px] rounded-[32px]"
+                  className="p-6 rounded-[32px]"
+                  style={{ width: '420px', height: '270px' }}
                 />
+                </div>
 
-                <div className="card-body ">
+                <div className="card-body w-2/3 ">
                   <h2 className="card-title text-2xl">
                     {carElement.productName}
                   </h2>
@@ -136,7 +122,7 @@ const BrandProducts = () => {
 
                       <Link to={`/updateProduct/${carElement._id}`}>
                         <button
-                          onClick={() => handleUpdate(carElement)}
+                          
                           className="col-span-1 btn text-white bg-red-600 border-none hover:text-white hover:bg-black w-full"
                         >
                           Update Product

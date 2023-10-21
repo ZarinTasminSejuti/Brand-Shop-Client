@@ -1,10 +1,13 @@
-import { useContext } from "react";
+import { useContext} from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 import swal from "sweetalert";
+import ToggleButton from "../components/ToggleButton";
+
 
 const Navbar = () => {
-  
+
+
   const { logOut,user,userDetails } = useContext(AuthContext);
 
    //navigate after logout
@@ -22,7 +25,7 @@ const Navbar = () => {
 
   const navLinks = (
     <>
-      <li className="text-lg rounded-xl text-white hover:text-white hover:bg-black">
+      <li className="text-lg rounded-xl text-white  hover:text-white">
         <NavLink to="/">Home</NavLink>
       </li>
       <li className="text-lg rounded-xl text-white  hover:text-white">
@@ -37,9 +40,13 @@ const Navbar = () => {
     </>
   );
 
+  
+
+
+
   return (
-    <div className="w-full bg-red-700 ">
-      <div className="navbar max-w-[1280px] px-12 mx-auto">
+    <div className="w-full bg-red-600 ">
+      <div className="navbar max-w-[1280px] px-8 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             {/* hamburger menu for small device */}
@@ -74,7 +81,7 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
 
-       <div className="lg:w-1/2 flex flex-row justify-end text-white p-2 gap-3">
+       <div className="lg:w-1/2 flex flex-row justify-end text-white p-2 gap-2">
        {user ? (
          <>
            <img
@@ -104,7 +111,9 @@ const Navbar = () => {
                 </button>
               </Link>
              </>
-         )}  
+          )}  
+          <ToggleButton></ToggleButton>
+         
         </div> 
       </div>
     </div>

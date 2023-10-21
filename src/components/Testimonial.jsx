@@ -10,7 +10,7 @@ const Testimonial = () => {
 
   return (
     <div className="w-full pt-36 text-center">
-      <h3 className="text-black text-6xl font-semibold">
+      <h3 className="text-red-600 text-6xl font-semibold">
         <span className="text-3xl text-red-600 font-semibold">...</span>{" "}
         Testimonial{" "}
         <span className="text-3xl text-red-600 font-semibold">...</span>

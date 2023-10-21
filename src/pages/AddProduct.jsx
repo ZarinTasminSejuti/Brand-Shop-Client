@@ -71,7 +71,7 @@ const AddProduct = () => {
   };
 
   return (
-    <div className="bg-[#CCCCC] w-full " >
+    <div className="bg-white w-full " >
       <div className="py-20 w-full lg:w-[1280px] mx-auto">
         <h3 className="text-5xl text-center mb-24 font-semibold">
           <span className="text-3xl text-red-600 font-semibold">...</span> Add
@@ -90,7 +90,7 @@ const AddProduct = () => {
                   type="text"
                   placeholder="Enter product name..."
                   name="productName"
-                  className="input input-bordered w-full rounded-md"
+                  className="input input-bordered bg-white w-full rounded-md"
                   required
                 />
               </label>
@@ -101,7 +101,7 @@ const AddProduct = () => {
                 <span className="label-text text-black font-bold">Brand Name</span>
               </label>
               <label >
-                <select name="brandName" id="select" className="select input-bordered rounded-md w-full">
+                <select name="brandName" id="select" className="select bg-white input-bordered rounded-md w-full">
                   <option disabled>
                     Select a vehicle type...
                   </option>
@@ -125,7 +125,7 @@ const AddProduct = () => {
                 <span className="label-text text-black font-bold">Type</span>
               </label>
               <label>
-                <select name="type" className="select rounded-md  input-bordered w-full">
+                <select name="type" className="select rounded-md bg-white input-bordered w-full">
                   <option defaultValue="type" disabled >
                     Select a vehicle type...
                   </option>
@@ -148,7 +148,7 @@ const AddProduct = () => {
                   type="text"
                   placeholder="Enter price..."
                   name="price"
-                  className="input rounded-md input-bordered w-full"
+                  className="input rounded-md input-bordered w-full bg-white"
                   required
                 />
               </label>
@@ -166,7 +166,7 @@ const AddProduct = () => {
                   type="text"
                   placeholder="Enter image url...."
                   name="imageUrl"
-                  className="input rounded-md  input-bordered w-full"
+                  className="input rounded-md  input-bordered bg-white w-full"
                 />
               </label>
             </div>
@@ -180,7 +180,7 @@ const AddProduct = () => {
                   type="text"
                   placeholder="Enter rating...."
                   name="productRating"
-                  className="input rounded-md  input-bordered w-full"
+                  className="input rounded-md bg-white input-bordered w-full"
                 />
               </label>
             </div>
@@ -196,7 +196,7 @@ const AddProduct = () => {
                   type="text"
                   placeholder="Enter product description..."
                   name="productDescription"
-                  className="input rounded-md  input-bordered resize-y h-28 w-1/2"
+                  className="input rounded-md bg-white  input-bordered resize-y h-28 w-1/2"
                 ></textarea>
               </label>
             </div>

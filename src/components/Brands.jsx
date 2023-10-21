@@ -7,8 +7,8 @@ const Brands = ({brand}) => {
 
             <div className="pt-36 w-full lg:w-[1280px] mx-auto">
                 <div className="text-center">
-                    <h3 className="text-6xl font-semibold"><span className="text-3xl text-red-600 font-semibold">...</span>{" "}Our Brands{" "}<span className="text-3xl text-red-600 font-semibold">...</span></h3>
-                    <p className="text-grey text-xl lg:w-1/2 my-16 mx-auto">At <span className="text-red-600 text-xl font-bold mt-5 mb-16">AutoHarbor</span>, we pride ourselves on delivering our core products with the utmost professionalism and dedication.</p>
+                    <h3 className="text-red-600 text-6xl font-semibold"><span className="text-3xl text-red-600 font-semibold">...</span>{" "}Our Brands{" "}<span className="text-3xl text-red-600 font-semibold">...</span></h3>
+                    <p className="text-grey-400 text-xl lg:w-1/2 my-16 mx-auto">At <span className="text-red-600 text-xl font-bold mt-5 mb-16">AutoHarbor</span>, we pride ourselves on delivering our core products with the utmost professionalism and dedication.</p>
                 </div>
 
 

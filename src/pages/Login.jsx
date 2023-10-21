@@ -60,7 +60,7 @@ const Login = () => {
         <div className="hero-content flex-col">
           <div className="text-center">
             <h1 className="text-5xl text-white font-bold">Login now!</h1>
-            <p className="py-6">
+            <p className="py-2 my-4 text-white  bg-opacity-80 font-medium bg-black px-4 rounded-xl">
               Please log in to access your account and explore our services.
             </p>
           </div>

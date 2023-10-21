@@ -5,13 +5,13 @@ const GetToKnowUs = () => {
     return (
         <div className="bg-[#CCCCC] w-full">
             <div className="pt-36 w-full lg:w-[1280px] mx-auto text-center">
-                <h3 className="text-4xl lg:text-6xl font-semibold"><span className="text-3xl text-red-600 font-semibold">...</span>{" "}Get To Know Us{" "}<span className="text-3xl text-red-600 font-semibold">...</span></h3>  
+                <h3 className="text-red-600 text-4xl lg:text-6xl font-semibold"><span className="text-3xl text-red-600 font-semibold">...</span>{" "}Get To Know Us{" "}<span className="text-3xl text-red-600 font-semibold">...</span></h3>  
                 
                 <div className="flex flex-col lg:flex-row  gap-20 mt-24 ">
                     
                     
                 <div className="text-center w-full lg:w-1/2 flex flex-col justify-between">
-                   <h3 className="lg:text-left text-4xl font-semibold text-black">
+                   <h3 className="lg:text-left text-4xl font-semibold ">
                    AutoHarbour: Your Trusted Source for Automotive Excellence</h3>
                    <p className="leading-5 text-left p-4 lg:p-0 lg:w-4/5 text-slate-500 text-sm my-5">At AutoHarbour, we are more than just an automotive destination; we are your trusted partner on the road to automotive excellence. With a rich history and a passion for all things automotive, our mission is to provide you with a personalized and unparalleled experience. </p>
                         <div className="lg:text-left text-xl">

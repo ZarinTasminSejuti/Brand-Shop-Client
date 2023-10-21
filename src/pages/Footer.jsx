@@ -47,7 +47,8 @@ const Footer = () => {
               </svg>
             </a>
           </div>
-        </nav>
+          </nav>
+          
         <aside className="text-slate-600">
           <p>Copyright © 2023 - All right reserved by AutoHarbor</p>
         </aside>
