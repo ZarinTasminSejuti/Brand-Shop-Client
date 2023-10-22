@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Banner = () => {
 
@@ -14,6 +16,10 @@ const Banner = () => {
     };
     
 
+    useEffect(() => {
+      AOS.init();
+    }, [])
+  
     return (
         <div className="w-full bg-cover h-[500px] bg-fixed lg:h-[750px] relative"
         style={{ backgroundImage: "url(https://i.ibb.co/mNTJKyV/car-banner.jpg)" }}>
@@ -23,7 +29,8 @@ const Banner = () => {
 
               <div className="text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
            
-                  <p className="text-white font-bold  text-5xl lg:text-7xl ">
+                  <p data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom" className="text-white font-bold  text-5xl lg:text-7xl ">
                   Welcome to AutoHarbour <br />
             
                 </p>

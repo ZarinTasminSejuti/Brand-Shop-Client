@@ -19,7 +19,7 @@ const MyCart = () => {
   const handleDelete = (itemId) => {
    
     // fetch(`https://brand-shop-server-3ttowepeu-zarin-tasmin-sejutis-projects.vercel.app/myCart/${itemId}`, 
-    fetch(`http://localhost:5000/myCart/${itemId} `, {
+    fetch(`https://brand-shop-server-qa1d68yte-zarin-tasmin-sejutis-projects.vercel.app/myCart/${itemId} `, {
             method: "DELETE",
             headers: {
               "content-Type": "application/json",

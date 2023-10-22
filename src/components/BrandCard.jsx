@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
-const BrandCard = ({brand}) => {
+const BrandCard = ({ brand }) => {
+    useEffect(() => {
+        AOS.init();
+      }, [])
+
         const {  title, image} = brand;
     return (
         <div className="p-3 lg:p-0">

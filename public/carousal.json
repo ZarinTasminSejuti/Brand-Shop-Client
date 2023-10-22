@@ -1,0 +1,60 @@
+[
+    {
+      "id": 1,
+      "title": "Toyota",
+      "image1": "https://i.ibb.co/0fw9q3W/Toyota-Banner1.jpg",
+      "image2": "https://i.ibb.co/3sbtQcy/Toyota-Banner2.jpg",
+      "image3": "https://i.ibb.co/prLcCDJ/Toyota-Banner.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Honda",
+      "image1": "https://i.ibb.co/qDBYHw8/honda-Banner1.webp",
+      "image2": "https://i.ibb.co/q7ByhSf/honda-Banner2.jpg",
+      "image3": "https://i.ibb.co/48Z3Q12/hondabanner3.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Ford",
+      "image1": "https://i.ibb.co/XtfKMRj/fordbanner1.jpg",
+      "image2":"https://i.ibb.co/gRDVp7H/fordbanner2.jpg",
+      "image3": "https://i.ibb.co/ssMBb9G/fordbanner3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Chevrolet",
+      "image1": "https://i.ibb.co/2Fb3s7j/chev1.jpg",
+      "image2": "https://i.ibb.co/gPK3Psb/chev2.jpg",
+      "image3": " https://i.ibb.co/9qmfRRp/chev3.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Nissan",
+      "image1": "https://i.ibb.co/stjQKRQ/nissan1.webp",
+      "image2": "https://i.ibb.co/rKj9vqH/nissan2.png",
+      "image3": "https://i.ibb.co/QCDDPTj/nissan3.png"
+    },
+    {
+      "id": 6,
+      "title": "Audi",
+      "image1": "https://i.ibb.co/94Fzksb/audi1.jpg",
+      "image2": " https://i.ibb.co/KGpLkvy/audi2.jpg",
+      "image3": "https://i.ibb.co/yfBWKsS/audi2.png"
+    },
+    {
+      "id": 7,
+      "title": "BMW",
+      "image1": "https://i.ibb.co/W2FLmrq/bmw1.jpg",
+      "image2": " https://i.ibb.co/17KSrXW/bmw2.jpg",
+      "image3": " https://i.ibb.co/M8JSJ3p/bmw3.webp"
+      },
+      {
+      "id": 8,
+      "title": "Mercedes-Benz",
+      "image1": "https://i.ibb.co/LNXB7Kg/benz1.jpg",
+      "image2": " https://i.ibb.co/djbkbwV/benz2.jpg",
+      "image3": " https://i.ibb.co/bLtK0XC/benz3.jpg"
+      }
+      
+  ]
+  

@@ -69,7 +69,7 @@ const Register = () => {
             <div className="hero-content flex-col">
             
             <div className="text-center">
-            <h1 className="text-4xl text-black font-bold">Create a new account</h1>
+            <h1 className="text-4xl text-red-600 font-bold">Create a new account</h1>
             <p className="py-5">
             Enter your information to setup a new account
             </p>

@@ -1,3 +1,11 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
+
+
+
+
 const Testimonial = () => {
   const overlayStyle = {
       position: "absolute",
@@ -8,9 +16,13 @@ const Testimonial = () => {
     backgroundColor: "rgba(0, 0, 0, 0.5)",
   };
 
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
     <div className="w-full pt-36 text-center">
-      <h3 className="text-red-600 text-6xl font-semibold">
+      <h3 data-aos="zoom-in" className="text-red-600 text-6xl font-semibold">
         <span className="text-3xl text-red-600 font-semibold">...</span>{" "}
         Testimonial{" "}
         <span className="text-3xl text-red-600 font-semibold">...</span>
@@ -29,7 +41,8 @@ const Testimonial = () => {
           
               <div className="w-full lg:w-[1280px] mx-auto relative z-50">
               <div className="flex flex-col lg:flex-row lg:justify-between justify-center mx-auto py-24 px-3 lg:px-0 ">
-                <div className="w-full bg-white p-6 md:w-96  mx-auto md:p-12 rounded-lg">
+                <div data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom" className="w-full bg-white p-6 md:w-96  mx-auto md:p-12 rounded-lg">
                   <div className="">
                     <p className="text-2xl font-serif text-slate-800 after:content-['\201D'] after:text-3xl after:text-gray-400 before:content-['\201C'] before:text-gray-400 before::text-3xl">
                       {" "}
@@ -58,7 +71,7 @@ const Testimonial = () => {
                   </div>
                 </div>
 
-                <div className="w-full bg-white p-6 md:w-96 mx-auto md:p-12 my-4 lg:my-0 rounded-lg">
+                <div  className="w-full bg-white p-6 md:w-96 mx-auto md:p-12 my-4 lg:my-0 rounded-lg">
                   <div className="">
                     <p className="text-2xl font-serif text-slate-800 after:content-['\201D'] after:text-3xl after:text-gray-400 before:content-['\201C'] before:text-gray-400 before::text-3xl">
                       {" "}
@@ -87,7 +100,8 @@ const Testimonial = () => {
                   </div>
                 </div>
 
-                <div className="w-full bg-white p-6 md:w-96 mx-auto md:p-12 rounded-lg">
+                <div data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom" className="w-full bg-white p-6 md:w-96 mx-auto md:p-12 rounded-lg">
                   <div className="">
                     <p className="text-2xl font-serif text-slate-800 after:content-['\201D'] after:text-3xl after:text-gray-400 before:content-['\201C'] before:text-gray-400 before::text-3xl">
                       {" "}
