@@ -47,7 +47,7 @@ console.log(newProduct);
 
 // fetch(`https://brand-shop-server-3ttowepeu-zarin-tasmin-sejutis-projects.vercel.app/updateProduct/${_id}`,
     
-fetch(`https://brand-shop-server-qa1d68yte-zarin-tasmin-sejutis-projects.vercel.app/updateProduct/${_id}`, {
+fetch(`https://brand-shop-server-steel.vercel.app/updateProduct/${_id}`, {
   method: "PUT",
   headers: {
     "Content-Type": "application/json",

@@ -40,7 +40,7 @@ const AddProduct = () => {
     };
 
     // fetch("https://brand-shop-server-3ttowepeu-zarin-tasmin-sejutis-projects.vercel.app/addProduct", {
-    fetch("https://brand-shop-server-qa1d68yte-zarin-tasmin-sejutis-projects.vercel.app/addProduct", {
+    fetch("https://brand-shop-server-steel.vercel.app/addProduct", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

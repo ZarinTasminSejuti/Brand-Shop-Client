@@ -39,10 +39,11 @@ const SingleCarDetails = () => {
 
 
   const handleAddToCart = () => {
-    fetch("https://brand-shop-server-qa1d68yte-zarin-tasmin-sejutis-projects.vercel.app/myCart", {
+    fetch("https://brand-shop-server-steel.vercel.app/myCart", {
+      
       method: "POST",
       headers: {
-        "content-Type": "application/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(newObjectCar),
     })
