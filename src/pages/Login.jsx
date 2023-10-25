@@ -42,7 +42,8 @@ const Login = () => {
         swal("You're logged in!", "Login Successful!", "success");
         navigate("/");
       })
-      .catch(() => {
+      .catch((error) => {
+        console.log(error);
         swal(
           "Login Failed!",
           "Wrong credentials! Please login again.",
